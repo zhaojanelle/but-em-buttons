@@ -1,0 +1,87 @@
+repo: 'but-em-buttons'
+canvasCourse: 'web-dev-3'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - css
+  - html
+  - typografier
+  - modulifier
+  - css-order-modules-grid-type-main
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    has:
+      - ['link[href*="Ubuntu+Condensed"]', 'The Google Font, `Ubuntu Condensed` (regular, italic & bold) is missing']
+      - 'h1'
+      - 'p'
+      - '.btn.btn-ghost'
+      - '.icon.i-32'
+    search:
+      - 'Explore the universe'
+      - 'Blast off into the endless wonder of the ever expanding universe.'
+      - 'Launch Now'
+      - '(h-w-1|height-win-full)'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['html', 'font-family', '"Ubuntu Condensed", sans-serif']
+    search:
+      - 'url\(\"\.\./images/starfield\.png\"\)'
+      - '#fff'
+      - '#90ccc3'
+      - '#b4fff4'
+      - 'rgba\(255\, 255\, 255\, \.7\)'
+      - 'rgba\(180\, 255\, 244\, \.2\)'
+      - 'text-shadow'
+      - 'border-radius'
+      - 'border-color'
+      - ['.btn-ghost', 'transition']
+      - '\:hover'
+      - '\:focus'
+      - '\:active'
+
+files:
+  - path: 'images/starfield.png'
+    maxSize: 140
+    maxWidth: 800
+    maxHeight: 800
+    smushed: true
+  - path: 'images/rocket.svg'
+    maxSize: 1
+    smushed: true
+
+screenshots:
+  - path: 'index.html'
+    label: 'Clicked'
+    sizes: [960]
+    before: |
+      on('.btn', 'transitionend', () => {
+        done();
+      });
+      activate('.btn');
+
+functionality:
+  - path: 'index.html'
+    tests:
+      - |
+        let btn = $('.btn');
+        let oldBg = css(btn).backgroundColor;
+
+        hover('.btn', function () {
+          if (css(btn).backgroundColor == oldBg) return fail('The background colour of the button doesn’t change when hovered');
+          pass();
+        });
+
+      - |
+        let btn = $('.btn');
+        let oldTop = css(btn).top;
+
+        activate('.btn', function () {
+          if (css(btn).top == oldTop) return fail('The top coordinate of the button doesn’t change when clicked');
+          pass();
+        });
+
