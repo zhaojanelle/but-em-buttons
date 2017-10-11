@@ -11,3 +11,8 @@ h1, p {
 .rocket {
   background-image: url(../images/rocket.svg);
 }
+
+.btn {
+  border: 3px solid #b4fff4;
+  border-radius: 10px;
+}
