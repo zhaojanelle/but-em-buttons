@@ -28,11 +28,22 @@ h1, p {
   background-color: rgba(180, 255, 244, .2);
 }
 
-.btn-bottom {
-  height: 4em;
+.btn:hover .rocket {
+
+}
+
+.btn:active {
+  height: 3.5em;
+}
+
+.btn:focus {
+  height: 3.5em;
+  color: #b4fff4;
+  border-color: #b4fff4;
+  background-color: rgba(180, 255, 244, .2);
 }
 
 .btn-under {
   border-bottom: 3px solid #b4fff4;
-  padding: 0 1em .5em;
+  padding: 0.35em .75em .5em;
 }
