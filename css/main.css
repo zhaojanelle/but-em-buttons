@@ -15,4 +15,21 @@ h1, p {
 .btn {
   border: 3px solid #b4fff4;
   border-radius: 10px;
+  color: #b4fff4;
+  transition: all 200ms linear;
+}
+
+.btn:hover {
+  color: #b4fff4;
+  border: 3px solid #b4fff4;
+  border-radius: 10px;
+  background-color: rgba(180, 255, 244, .2);
+}
+
+.btn-bottom {
+  height: 4em;
+}
+
+.btn-under {
+  border-bottom: 3px solid #b4fff4;
 }
