@@ -10,6 +10,8 @@ h1, p {
 
 .rocket {
   background-image: url(../images/rocket.svg);
+  bottom: 0;
+  transition: all 200ms linear;
 }
 
 .btn {
@@ -29,7 +31,11 @@ h1, p {
 }
 
 .btn:hover .rocket {
+  bottom: .25em;
+}
 
+.launcher {
+  height: 3.5em;
 }
 
 .btn:active {
@@ -37,7 +43,6 @@ h1, p {
 }
 
 .btn:focus {
-  height: 3.5em;
   color: #b4fff4;
   border-color: #b4fff4;
   background-color: rgba(180, 255, 244, .2);
