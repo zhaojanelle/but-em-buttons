@@ -1,6 +1,6 @@
 html {
   font-family: "Ubuntu Condensed", sans-serif;
-  background-image: url(../images/starfield.png);
+  background-image: url("../images/starfield.png");
   color: #fff;
 }
 
@@ -9,12 +9,12 @@ h1, p {
 }
 
 .rocket {
-  background-image: url(../images/rocket.svg);
+  background-image: url("../images/rocket.svg");
   bottom: 0;
   transition: all 200ms linear;
 }
 
-.btn {
+.btn-ghost {
   border: 3px solid #90ccc3;
   border-radius: 10px;
   color: #b4fff4;
@@ -23,14 +23,14 @@ h1, p {
   height: 3.5em;
 }
 
-.btn:hover {
+.btn-ghost:hover {
   color: #b4fff4;
   border: 3px solid #90ccc3;
   border-radius: 10px;
   background-color: rgba(180, 255, 244, .2);
 }
 
-.btn:hover .rocket {
+.btn-ghost:hover .rocket {
   bottom: .25em;
 }
 
@@ -38,11 +38,11 @@ h1, p {
   height: 3.5em;
 }
 
-.btn:active {
+.btn-ghost:active {
   height: 3em;
 }
 
-.btn:focus {
+.btn-ghost:focus {
   color: #b4fff4;
   border-color: #90ccc3;
   background-color: rgba(180, 255, 244, .2);
@@ -50,5 +50,5 @@ h1, p {
 
 .btn-under {
   border-bottom: 3px solid #90ccc3;
-  padding: 0.35em .75em .5em;
+  padding: .35em .75em .5em;
 }
