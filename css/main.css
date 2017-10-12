@@ -15,7 +15,7 @@ h1, p {
 }
 
 .btn {
-  border: 3px solid #b4fff4;
+  border: 3px solid #90ccc3;
   border-radius: 10px;
   color: #b4fff4;
   transition: all 200ms linear;
@@ -25,7 +25,7 @@ h1, p {
 
 .btn:hover {
   color: #b4fff4;
-  border: 3px solid #b4fff4;
+  border: 3px solid #90ccc3;
   border-radius: 10px;
   background-color: rgba(180, 255, 244, .2);
 }
@@ -44,11 +44,11 @@ h1, p {
 
 .btn:focus {
   color: #b4fff4;
-  border-color: #b4fff4;
+  border-color: #90ccc3;
   background-color: rgba(180, 255, 244, .2);
 }
 
 .btn-under {
-  border-bottom: 3px solid #b4fff4;
+  border-bottom: 3px solid #90ccc3;
   padding: 0.35em .75em .5em;
 }
