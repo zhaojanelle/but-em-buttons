@@ -18,7 +18,7 @@ h1, p {
   color: #b4fff4;
   transition: all 200ms linear;
   padding: 0;
-  height: 3em;
+  height: 3.5em;
 }
 
 .btn:hover {
@@ -33,7 +33,7 @@ h1, p {
 }
 
 .btn:active {
-  height: 3.5em;
+  height: 3em;
 }
 
 .btn:focus {
